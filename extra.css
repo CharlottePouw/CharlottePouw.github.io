@@ -1,0 +1,121 @@
+@media screen and (min-width: 800px) {
+* {
+    /* Here we set the margin and padding  0 */
+    margin: 100;
+
+    padding: 100;
+}
+
+    body {
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+}
+
+article {
+    width: 100%
+}
+
+
+nav {
+    /*it specifies the mouse cursor to be displayed
+    when it is pointed over the element */
+    cursor: pointer;
+}
+
+nav ul {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.background {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.sticky {
+    /* This is used to make the navbar sticky, So that the
+    navbar stays at the top part even if we scroll */
+    position: sticky;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* top: 0px; */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-flow: row wrap;
+    /* gap: 10px; */
+}
+
+.logo {
+    flex: 1;
+    font-family: Palatino;
+    color: black;
+    /* font-size: rem; */
+    /* color: white; */
+    /* background-color: green; */
+}
+
+.top-quote {
+    flex: 1;
+    font-family: Palatino;
+    font-size: 24px;
+    text-align: center;
+    /* width: 100%; */
+    /* max-width: 50%; */
+    /* min-width: 50%; */
+}
+
+.top-right {
+    flex: 1;
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    height: 100%;
+    position: sticky;
+}
+
+.back-to-top a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.back-to-top:before {
+    content: '';
+}
+
+.title {
+    text-align:center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.gallery img {
+    display: block;
+    object-fit: cover;
+}
+
+.gallery li{
+    display: flex;
+    max-width: 50%;
+}
+
+.gallery figcaption{
+    text-align: center;
+}
