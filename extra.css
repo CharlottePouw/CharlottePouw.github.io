@@ -97,11 +97,9 @@ nav ul {
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
-    margin_left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 img.profile {
